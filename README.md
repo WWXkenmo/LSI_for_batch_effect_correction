@@ -20,3 +20,5 @@ to make comparison
 cor(data0@DimReduction$cell.pls[,dims],embed[,dims])
 ```
 I need to note that once the dims chose to > 18, two embedding would be different, the reason is that when doing second round SVD, the inner producted matrix is generated base on the first round truncted singular vector, therefore the latent dimensionality is constraint by the first round SVD (which is, in our case, 18). So if we chose a dimensions > 18 to perform SVD (50), the >=19th singular vector would be random.  
+
+[1] Liu Y, Wang T, Zhou B, et al. Robust integration of multiple single-cell RNA sequencing datasets using a single reference space[J]. Nature biotechnology, 2021: 1-8.
